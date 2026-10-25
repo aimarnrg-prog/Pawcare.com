@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - PawCare</title>
+    <link rel="icon" href="img/favicon-1.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Paw<span>Care</span></a>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Hubungi PawCare</h1>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+          align-items: start;
+        "
+      >
+        <!-- Informasi Kontak & Peta -->
+        <section id="info-kontak">
+          <h2>Informasi & Alamat</h2>
+          <address style="font-style: normal; margin-top: 1rem">
+            <p>
+              <strong>Alamat:</strong> Jl. Pondok Benda Raya, No.22A, Pamulang,
+              Tangerang Selatan
+            </p>
+            <p>
+              <strong>Telepon:</strong>
+              <a href="tel:+628123456789" style="color: var(--text-color)"
+                >+62 812 3456 789</a
+              >
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:info@pawcare.com" style="color: var(--text-color)"
+                >info@pawcare.com</a
+              >
+            </p>
+          </address>
+
+          <h3 style="margin-top: 2rem">Jam Operasional</h3>
+          <ul style="margin-left: 2rem">
+            <li>Senin - Minggu (Setiap Hari): 09.00 - 20.00 WIB</li>
+            <li>Layanan Gawat Darurat Klinik Buka 24 Jam</li>
+          </ul>
+
+          <div style="margin-top: 2rem">
+            <!-- Embed Maps Fiktif / Sesuai instruksi wilayah -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31726.918451814243!2d106.70696293955079!3d-6.281497699999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0754ef56067%3A0x8220dbf978d54527!2sSMK%20Bina%20Informatika!5e0!3m2!1sid!2sid!4v1792937645036!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0; border-radius: 8px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <!-- Formulir Pesan -->
+        <section id="form-pesan">
+          <h2>Kirim Pesan atau Reservasi</h2>
+          <form
+            id="form-kontak"
+            action="#"
+            method="post"
+            style="margin-top: 1rem"
+          >
+            <fieldset>
+              <legend>Formulir Layanan Pelanggan</legend>
+
+              <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Masukkan nama Anda"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="contoh: email@domain.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nohp">Nomor Handphone</label>
+                <input
+                  type="tel"
+                  id="nohp"
+                  name="nohp"
+                  placeholder="0812xxxxxx"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="kategori">Kategori Pesan</label>
+                <select id="kategori" name="kategori">
+                  <option value="grooming">Grooming & Styling</option>
+                  <option value="klinik">Klinik / Kesehatan Medis</option>
+                  <option value="hotel">Penitipan / Pet Hotel</option>
+                  <option value="lainnya">Pertanyaan Lainnya</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="pesan">Pesan / Keluhan</label>
+                <textarea
+                  id="pesan"
+                  name="pesan"
+                  rows="5"
+                  placeholder="Tuliskan pesan Anda secara detail..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" id="syarat" name="syarat" required />
+                <label for="syarat"
+                  >Saya menyetujui syarat dan ketentuan PawCare.</label
+                >
+              </div>
+
+              <div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+                <button
+                  type="reset"
+                  class="btn"
+                  style="
+                    background-color: #dddddd;
+                    color: #1a1a1a;
+                    margin-left: 10px;
+                  "
+                >
+                  Reset Form
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 PT PAWCARE JAYA ABADI. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
